@@ -1,10 +1,19 @@
 const robotron = document.querySelector("#robotron")
 
-robotron.addEventListener("click", dizOi)
+robotron.addEventListener("click", (evento) =>{
+    console.log(evento)
+})
 
-function dizOi(){
-    console.log("oi")
+function dizOi(nome){
+    console.log("Olá " + nome)
+    console.log("Bem vindo ao Robotron 2000")
 }
-// criamos uma const pra armzenar a busca pelo elemento
+
+dizOi("Nia")
+
+// criamos uma const pra armazenar a busca pelo elemento
 // dizemos que elemento buscado quando clicado deve executar a função
-// criamos a fução que vai ser executada quando clicar
+// criamos a função que vai ser executada quando clicar
+// criamos uma função anonima na linha 3-4 para executar um codigo atrelado a um evento
+//
+
