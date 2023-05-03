@@ -5,3 +5,7 @@ const braco = document.querySelector("#braco")
 somar.addEventListener("click", (evento) => {
     braco.value = parseInt(braco.value) + 1
 })
+
+subtrair.addEventListener("click", (evento) => {
+    braco.value = parseInt(braco.value) - 1
+})
