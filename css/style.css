@@ -35,14 +35,15 @@ main {
     margin: 0;
     flex-basis: 40%;
     position: relative;
+    height:85%;
 }
 
 .robo {
-    height: 110%;
+    height: 100%;
     z-index: 1;
-    position: absolute;
-    left: -20%;
-    top: -5%;
+    position: relative;
+    left: -3%;
+    top: -1%;
 }
 
 .titulo {
@@ -230,4 +231,34 @@ main {
         height: 80vh;
         margin: 10vh auto;
     }
+}
+
+/****************************** botoes de cor do robo *****/
+
+.alterar{
+    margin-top: 1em;
+    font-size: 1em;
+    text-transform: uppercase;
+    margin-bottom:1.6em;
+    padding: 0.2em 0.1em;
+    float: left;
+    border: 3px solid var(--main-branco);
+    background: var(--main-branco);
+    clip-path: polygon(100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 0);
+    cursor: pointer;
+}
+
+.alterar:hover {
+    background: var(--main-preto);
+    color: var(--main-branco)
+}
+
+.robo-botoes{
+    flex-basis: 8%;
+    padding: 2em 2em 0;
+    height: 80%;
+    background: rgba(0,0,0,0.6);
+    clip-path: polygon(calc(100% - 30px) 0, 100% 30px, 100% calc(100% - 30px), calc(100% - 30px) 100%, 30px 100%, 0 calc(100% - 30px), 0 30px, 30px 0);
+    border-left: 5px solid var(--main-cinza);
+    height: 80%;
 }
